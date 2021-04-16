@@ -1,0 +1,262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Personalized by:
+% Brian Salehi (https://github.com/briansalehi/resume)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+% Comment out this figure block if you don't want a photo
+%\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+\small % Smaller font size
+\textbf{Age} \\
+25 \\ % Your age
+\Sep % Some whitespace
+\textbf{Email} \\
+\url{salehibrian@gmail.com} \\ % Your email address
+\Sep % Some whitespace
+\textbf{Website} \\
+\url{briansalehi.ir} \\ % Your URL
+\Sep % Some whitespace
+\textbf{Phone} \\
++98 903 121 8938 \\ % Your phone number
+\Sep % Some whitespace
+\textbf{Address} \\
+No 15, Mojdeh st., Pasdaran st., Tehran, Iran \\
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Brian Salehi} % Large heading - your name
+
+\cvsubheading{Software Engineer} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Professional Summary}{I'm a C and C++ programmer on Linux systems. I'm 25 years old and I have passion for learning more about computer science such as low level programming, software and hardware development, machine learning and image processing.}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+%\CVItem{04/2021 - present, \textit{Software Engineer, System Administrator, Database Specialist}, Sadad Company}{
+%Operated, secured and administered Linux systems, 
+%}
+
+%------------------------------------------------
+
+\CVItem{03/2019 - present, \textit{Software Engineer, Technical Trainer}, Freelance}{
+Having more than 10 students from fresh year colleage to PhD candidates in Iran, Germany and Poland, teaching technical skills including Linux administration, Bash scripting, C and C++ programming languages, database design and SQL scripting.
+%\begin{itemize}
+%	\item Learned how to make amazing coffee
+%	\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+%	\begin{itemize}
+%		\item Paper jam
+%		\item Software issues:
+%		\begin{itemize}
+%			\item Word not sending the correct data to printer
+%			\item Windows trying to print in letter format
+%		\end{itemize}
+%		\item Coffee spilled inside printer
+%	\end{itemize}
+%	\item Broke the office record for number of kitten pictures in cubicle
+%	\item Learned how to make more amazing coffee on a new machine
+%	\item Mastered the art of filing accurate TPS reports
+%\end{itemize}
+}
+
+%------------------------------------------------
+
+\CVItem{12/2017 - 01/2019, \textit{Product Manager, Software Engineer}, Segal Company}{
+Managed a team of 5 developers and completed 5 projects including firmwares and softwares for custom hardwares mostly using C++ programming language. Projects information are disclosed.
+}
+
+%------------------------------------------------
+
+\CVItem{09/2016 - 12/2017, \textit{Software Engineer, Database Specialist}, Manzoomeh Negaran Holdings}{
+Fully designed and implemented database structure for Seller startup company using SQL.
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+%\CVItem{09/2021 - present, Islamic Azad University}{MSc. of Computer Science}
+
+%------------------------------------------------
+
+\CVItem{09/2017 - 06/2021, Islamic Azad University}{BSc. of Computer Science}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATES
+%----------------------------------------------------------------------------------------
+
+\CVSection{Certificates}
+
+%------------------------------------------------
+
+\CVItem{2015, \textit{LPIC-1: Linux Systems}, Fanavaran Anisa Ins.}{}
+
+%------------------------------------------------
+
+\CVItem{2016, \textit{LPIC-2: Linux Networks}, Fanavaran Anisa Ins.}{}
+
+%------------------------------------------------
+
+\CVItem{2017, \textit{LPIC-3: Linux Security}, Fanavaran Anisa Ins.}{}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Skills}
+
+%------------------------------------------------
+
+\CVItem{Special Skills}
+{\begin{itemize}
+	\item Linux Administration\\
+		Administering and securing Linux systems\\
+	\item C Programming\\
+		Linux interface programming\\
+	\item C++ Programming\\
+		Capability description\\
+	\item Bash Scripting\\
+		Writing heavy duty scripts using Bash\\
+	\item x86\_64 Assembly Programming\\
+		Writing process specific high performance procedures
+\end{itemize}}
+
+%------------------------------------------------
+
+\CVItem{Tools}
+{\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth}}
+ \bluebullet Git: & Implementing Git server and repositories on company scale\\
+% \bluebullet Jenkins & Capability description\\
+% \bluebullet Docker & Capability description\\
+ \bluebullet Make, CMake: & Porting projects into using auto-compilation, test and dashboard\\
+ \bluebullet Doxygen: & Documenting a C,C++ sourced project\\
+ \bluebullet UML: & Designing complex projects using standard UML 2.0\\
+\end{tabular}}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+%\CVSection{Awards}
+
+%------------------------------------------------
+
+%\CVItem{2010, \textit{Postgraduate Scholarship}, Cornell University}{Awarded to the top student in their final year of a Bachelors degree.}
+
+%------------------------------------------------
+
+%\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Interests}
+
+%------------------------------------------------
+
+\CVItem{Professional}{Image processing, machine learning, kernel hacking, software design, mathematics, quantum mechanics}
+
+%------------------------------------------------
+
+\CVItem{Personal}{Electric guitar, swimming, watching series, hiking}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
