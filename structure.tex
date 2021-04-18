@@ -69,6 +69,11 @@
 %	NEW COMMANDS
 %----------------------------------------------------------------------------------------
 
+\newcommand{\CVDate}[0]{ % New command for CV datetime info
+\begin{flushright}
+	\textit{Updated: \today}
+\end{flushright}
+}
 \newcommand{\userinformation}[1]{\renewcommand{\userinformation}{#1}} % Define a new command for the CV user's information that goes into the left column
 
 \newcommand{\cvheading}[1]{{\Huge\bfseries\color{RoyalBlue} #1} \par\vspace{.6\baselineskip}} % New command for the CV heading
@@ -89,6 +94,34 @@
 \newcommand{\CVItem}[2]{ % New command for the item descriptions
 \textbf{\color{RoyalBlue} #1}\par
 #2
+\SmallSep % Used for spacing
+}
+
+\newcommand{\CVRecord}[5]{ % New command for a data record
+\textbf{#1}\hfill\textit{#5}\par
+\textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+#4
+\Sep % Used for spacing
+}
+
+\newcommand{\CVReference}[4]{ % New command for references
+\textbf{#1}\par
+#2, #3
+\par
+Email: #4
+\SmallSep % Used for spacing
+}
+
+\newcommand{\CVAbility}[3]{ % New command for the item descriptions
+\textbf{\color{RoyalBlue} #1} \hfill #2 \par
+#3
+\SmallSep % Used for spacing
+}
+
+\newcommand{\CVSkill}[2]{ % New command for the item descriptions
+\textbf{#1}\par
+#2
+\par
 \SmallSep % Used for spacing
 }
 
