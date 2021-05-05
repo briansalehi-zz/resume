@@ -126,3 +126,15 @@ Email: #4
 }
 
 \newcommand{\bluebullet}{\textcolor{RoyalBlue}{$\circ$}~~} % New command for the blue bullets
+
+%counters to calculate my age.
+%Place `\theage\' in the document where you want your age to appear.
+%year counter, month counter, and day counter
+\newcounter{dobyear}\setcounter{dobyear}{1995}
+\newcounter{dobmonth}\setcounter{dobmonth}{6}
+\newcounter{dobday}\setcounter{dobday}{25}
+%calculate number of years
+\newcounter{age}\setcounter{age}{\the\year}\addtocounter{age}{-\thedobyear}
+%condition to test for birthmonth, then birth day.
+\ifnum\the\month>\thedobmonth\else%
+	\ifnum\the\day<\thedobday\addtocounter{age}{-1}\fi\fi
