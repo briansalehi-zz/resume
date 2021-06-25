@@ -104,6 +104,13 @@
 \Sep % Used for spacing
 }
 
+\newcommand{\CVCertificate}[5]{ % New command for a data record
+\textbf{#1}\hfill\textit{#5}\par
+\textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
+#4
+\Sep % Used for spacing
+}
+
 \newcommand{\CVCooperation}[6]{ % New command for a data record
 	\textbf{#1}\hfill\textit{#6} (\textit{#5})\par
 \textbf{\color{RoyalBlue}\textit{#2}}\hfill\textbf{\color{RoyalBlue} #3}\par
@@ -134,7 +141,7 @@ Email: #4
 
 \newcommand{\CVSkill}[2]{ % New command for the item descriptions
 \textbf{#1}\par
-#2
+\quad#2
 \par
 \SmallSep % Used for spacing
 }
@@ -145,7 +152,7 @@ Email: #4
 %Place `\theage\' in the document where you want your age to appear.
 %year counter, month counter, and day counter
 \newcounter{dobyear}\setcounter{dobyear}{1995}
-\newcounter{dobmonth}\setcounter{dobmonth}{6}
+\newcounter{dobmonth}\setcounter{dobmonth}{7}
 \newcounter{dobday}\setcounter{dobday}{25}
 %calculate number of years
 \newcounter{age}\setcounter{age}{\the\year}\addtocounter{age}{-\thedobyear}
