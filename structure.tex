@@ -70,9 +70,9 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\CVDate}[0]{ % New command for CV datetime info
-\begin{flushright}
-	\textit{Updated: \today}
-\end{flushright}
+    \begin{flushright}
+        \textit{Updated: \today}
+    \end{flushright}
 }
 \newcommand{\userinformation}[1]{\renewcommand{\userinformation}{#1}} % Define a new command for the CV user's information that goes into the left column
 
@@ -126,11 +126,9 @@
 }
 
 \newcommand{\CVReference}[4]{ % New command for references
-\textbf{#1}\par
-#2, #3
-\par
-Email: #4
-\SmallSep % Used for spacing
+    \textbf{#1}\hfill\textit{#4}\par
+    #2, #3
+    \SmallSep % Used for spacing
 }
 
 \newcommand{\CVAbility}[3]{ % New command for the item descriptions
@@ -141,7 +139,7 @@ Email: #4
 
 \newcommand{\CVSkill}[2]{ % New command for the item descriptions
 \textbf{#1}\par
-\quad#2
+\quad{\small#2}
 \par
 \SmallSep % Used for spacing
 }
